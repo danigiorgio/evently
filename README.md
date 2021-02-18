@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="calendar" src="./.github/images/calendar.png" />
+    <img alt="calendar" src="./.github/calendar.png" />
 </p>
 <h1 align="center">
  Evently
