@@ -1,6 +1,7 @@
 <p align="center">
-    <img alt="logo" src="./public/favicon.ico" width="70" />
-</p><h1 align="center">
+    <img alt="calendar" src="./github/images/calendar.png" />
+</p>
+<h1 align="center">
  Evently
 </h1> 
 
@@ -37,6 +38,7 @@ $ yarn start
 ```
 Open another console window and run:
 ```
-$ yarn server (starts json-server at port 3001, you can change this in package.json)
+$ yarn server 
 ```
+(starts json-server at port 3001, you can change this in package.json)
 
