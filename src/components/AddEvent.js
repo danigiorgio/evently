@@ -1,10 +1,11 @@
+import styled from '@emotion/styled';
 import axios from 'axios';
 import React, { useState } from 'react';
-import { Container, Row, Col, Form } from 'react-bootstrap';
+import { Col, Container, Form, Row } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import Swal from 'sweetalert2';
+
 import Error from './Error';
-import styled from '@emotion/styled';
 
 const StyledForm = styled.form`
   @media screen and (min-width: 992px) {
@@ -46,13 +47,17 @@ function AddEvent({ setNewEvents }) {
     setError(false);
 
     try {
-      const res = await axios.post('http://localhost:3001/events', {
-        name,
-        description,
-        location,
-        date,
-        categoryId,
-      });
+      const res = await axios.post(
+        'https://my-json-server.typicode.com/voirs/evently/events',
+        //for local use: http://localhost:3001/events
+        {
+          name,
+          description,
+          location,
+          date,
+          categoryId,
+        },
+      );
       if (res.status === 201) {
         Swal.fire({
           position: 'center',
