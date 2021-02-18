@@ -10,7 +10,7 @@
 </div>
 
 
-### 👩‍💻 [Demo](http://)
+### 👩‍💻 [Demo](http://evently.vercel.app/)
 
 
 ## ✨ Tech 
