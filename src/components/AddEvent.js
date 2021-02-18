@@ -48,7 +48,7 @@ function AddEvent({ setNewEvents }) {
 
     try {
       const res = await axios.post(
-        'https://my-json-server.typicode.com/voirs/evently/events',
+        'https://json-server-evently.herokuapp.com/events',
         //for local use: http://localhost:3001/events
         {
           name,
