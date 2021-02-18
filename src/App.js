@@ -21,7 +21,6 @@ function App() {
         setEvents(res.data);
       };
       fetchData();
-      console.log('useEffect, fetchData here');
       setNewEvents(false);
     }
   }, [newEvents]);
