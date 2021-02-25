@@ -42,3 +42,5 @@ $ yarn server
 ```
 (starts json-server at port 3001, you can change this in package.json)
 
+Production uses this heroku url -> https://json-server-evently.herokuapp.com/ that has the same content as db.json, see [this repo](https://github.com/jesperorb/json-server-heroku)  about how to implement this.
+
