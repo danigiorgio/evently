@@ -25,6 +25,11 @@ svg {
   color: #fd4659;
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
 .btn-salmon {
   background-color: #fd4659;
   border: none;

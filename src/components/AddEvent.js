@@ -49,7 +49,7 @@ function AddEvent({ setNewEvents }) {
     try {
       const res = await axios.post(
         'https://json-server-evently.herokuapp.com/events',
-        //for local use: http://localhost:3001/events
+        // For local set-up use: 'http://localhost:3001/events
         {
           name,
           description,
