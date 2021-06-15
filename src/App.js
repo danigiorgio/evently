@@ -17,7 +17,7 @@ function App() {
       const fetchData = async () => {
         const res = await axios.get(
           'https://json-server-evently.herokuapp.com/events/?_sort=date&_order=asc',
-          //for local use: http://localhost:3001/events/?_sort=date&_order=asc
+          // For local set-up use: http://localhost:3001/events/?_sort=date&_order=asc
         );
         setEvents(res.data);
       };

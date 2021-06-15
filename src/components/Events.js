@@ -1,8 +1,8 @@
+import styled from '@emotion/styled';
 import React from 'react';
 import { CardDeck } from 'react-bootstrap';
 
 import EventItem from './EventItem';
-import styled from '@emotion/styled';
 
 const StyledCardDeck = styled(CardDeck)`
   margin-top: 10px;
@@ -26,7 +26,7 @@ const StyledCategTitle = styled.h2`
   text-align: center;
 `;
 
-const Category = ({ events, categoryId, title }) => {
+const Category = ({ events, categoryId, title, setNewEvents }) => {
   const filteredEvents = events
     .slice(5)
     .filter(event => event.categoryId === categoryId);
@@ -41,7 +41,7 @@ const Category = ({ events, categoryId, title }) => {
           </div>
         ) : (
           filteredEvents.map((filteredEvent, i) => (
-            <EventItem key={i} {...filteredEvent} />
+            <EventItem key={i} {...filteredEvent} setNewEvents={setNewEvents} />
           ))
         )}
       </StyledCardDeck>
@@ -49,7 +49,7 @@ const Category = ({ events, categoryId, title }) => {
   );
 };
 
-function Events({ events }) {
+function Events({ events, setNewEvents }) {
   return (
     <>
       <section className="container mt-5">
@@ -57,7 +57,7 @@ function Events({ events }) {
 
         <StyledCardDeck>
           {events.slice(0, 5).map((event, i) => (
-            <EventItem key={i} {...event} />
+            <EventItem key={i} {...event} setNewEvents={setNewEvents} />
           ))}
         </StyledCardDeck>
 
