@@ -31,7 +31,7 @@
    
 1.  **Run the following commands**
 ```
-$ git clone https://github.com/voirs/evently.git
+$ git clone https://github.com/danigiorgio/evently.git
 $ cd evently
 $ yarn
 $ yarn start
